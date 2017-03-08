@@ -1,0 +1,8 @@
+html, body, h1, h2, h3, h4, div, p, ul, li, header, footer, a, table, td, tr, th, img, span {
+    margin: 0;
+    padding: 0;
+    color: #797979;
+    font-family: "メイリオ", sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+}
