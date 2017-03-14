@@ -2,26 +2,40 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Te+A</title>
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/stylesheet.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
     </head>
+    
     <body>
-        <header>
-            <div class="header-logo">
-                <img src="assets/img/logo-tea.png" alt="no image" class="tea-logo">
+        <div id ="top" class="top">
+            <img src="assets/img/logo-tea.png" alt="no image" class="top-image">
+        </div>
+        
+        <div id="fixedBox" class="header">
+            <div class="header-container">
+                <div class="header-logo">
+                    <img src="assets/img/logo-tea.png" alt="no image" class="tea-logo">
+                </div>
+                <nav>
+                    <div class="header-menu">
+                        <ul>
+                            <li><a href="#top">Top</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#activities">Activities</a></li>
+                            <li><a href="#contacts">Contacts</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <div class="header-menu">
-                <a href="#top">Top</a>
-                <a href="#about">About</a>
-                <a href="#activities">Activities</a>
-                <a href="#contacts">Contacts</a>
-            </div>
-        </header>
-        <div id="top" class="top"></div>
+        </div>
         
         <div id="about" class="about">
-            <div class="about-us">
+            <div class="about-section">
                 <h1 class="section-title">About</h1>
                 <h2>ゼロからプロを目指す</h2>
                 <p>無料で効率良くアプリ開発が学べて、しっかりやれば６ヶ月〜１年でアプリ開発で稼ぐことができます。<br>卓越した　向上心を持って　挑戦していくサークルです。<br><br>Te+Aにとっての挑戦とは</p>
@@ -44,28 +58,46 @@
         </div>
         
         <div id="activities" class="activities">
-            <h1 class="section-title">Activities</h1>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.0142722591977!2d135.73906056521955!3d35.056382271593066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8118bbb5ef5%3A0xfe116e61fff6c322!2z44CSNjAzLTg0NzMg5Lqs6YO95bqc5Lqs6YO95biC5YyX5Yy65aSn5a6u5Y2X5bGx44OO5YmN55S677yR77yUIOODhOOCpOODs-ODl-ODqeOCtg!5e0!3m2!1sja!2sjp!4v1487334076716" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+            <div class="activities-section">
+               <h1 class="section-title">Activities</h1>
+                <div class="contacts-section">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.0142722591977!2d135.73906056521955!3d35.056382271593066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8118bbb5ef5%3A0xfe116e61fff6c322!2z44CSNjAzLTg0NzMg5Lqs6YO95bqc5Lqs6YO95biC5YyX5Yy65aSn5a6u5Y2X5bGx44OO5YmN55S677yR77yUIOODhOOCpOODs-ODl-ODqeOCtg!5e0!3m2!1sja!2sjp!4v1487334076716"  frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <p class="address">
+                        ツインプラザ<br>〒603-8473 京都府京都市北区大宮南山ノ前町１４<br>
+                        <a class="view-map" href="https://goo.gl/maps/1rpRjzCdnzC2" target="_blank">マップで見る</a><br>
+                        活動日<br>
+                           月、火、水、金、土　13:00~21:30
+                    </p>
+                </div>
             </div>
-            <p>
-                ツインプラザ<br>〒603-8473 京都府京都市北区大宮南山ノ前町１４<br><br>活動日<br>   月、火、水、金、土　13:00~21:30
-            </p>
         </div>
         
         <div id="contacts" class="contacts">
-            <h1 class="section-title">Contacts</h1>
-            <form class="contact-form">
-                <input type="text" name="name" placeholder="Name">
-                <input type="text" name="email" placeholder="Email">
-                <textarea name="message" placeholder="Message"></textarea>
-                <button type="submit" class="btn">Submit</button>
-            </form>
-            <a class="twitter-timeline" href="https://twitter.com/teaapplication" width="400" height="500">Tweets by teaapplication</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div class="contacts-section">
+                <h1 class="section-title">Contacts
+                    <a href="https://twitter.com/teaapplication?lang=ja" class="social-icon" target="_blank">
+                        <img src="assets/img/Twitter_Logo_Blue.png" class="icon" alt="twi">
+                    </a>
+                    <a href="https://github.com/tea-app" class="social-icon" target="_blank">
+                        <img src="assets/img/GitHub-Mark-120px-plus.png" class="icon" alt="github">
+                    </a>
+                </h1>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="email" placeholder="Email">
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
         </div>
         
         <footer>
             <div class="copyright">Copyright©︎ 2017 Te+A</div>
         </footer>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/js/header.fixed.js"></script>
     </body>
 </html>

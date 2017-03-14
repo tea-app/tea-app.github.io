@@ -1,0 +1,75 @@
+@media(max-width: 376px){
+    /*for mobile*/
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .section-title {
+        padding: 16px 0;
+    }
+    .header {
+        width: 100%;
+        height: 120px;
+
+    }
+    .header-container {
+        width: 100%;
+        height: 120px;
+    }
+    .header-logo {
+        display: none;
+    }
+    .header-menu {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        border-bottom: none;
+        
+    }
+    .header-menu a {
+        margin: 0;
+        border-bottom: 1px solid #eee;
+    }
+    li {
+        display: table-row;
+    }
+    .about-section {
+        width: 100%;
+}
+    .value {
+        width: 100%;
+        display: block;
+    }
+    .value-box {
+        margin-top: 10px;
+        
+    }
+    .activities-section {
+        width: 100%;
+    }
+    .map {
+        display: none;
+    }
+    .view-map {
+        display: inline;
+    }
+    .contacts-section {
+        width: 100%;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    input[type="text"], textarea {
+        width: 100%;
+    }
+    footer {
+        margin: 0;
+    }
+}
