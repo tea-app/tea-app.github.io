@@ -9,7 +9,7 @@
         $("html, body").stop().animate({scrollTop: position}, speed, "swing");
         return false;
     });
-         
+    
     var nav     = $('#fixedBox'),
         offset  = nav.offset();
               

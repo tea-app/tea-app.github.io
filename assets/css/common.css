@@ -30,17 +30,17 @@ p {
 }
 .header {
     width: 100%;
-    height: 65px;
+    height: 64px;
     top: 0;
     left: 0;
     right: 0;
     margin: auto;
-    line-height: 65px;
+    line-height: 48px;
     background-color: #fff;
     font-size: 20px;
 }
 .header-container {
-    width: 1000px;
+    width: 80%;
     margin: auto;
 }
 .header-logo {
@@ -60,82 +60,108 @@ p {
     border-bottom: 1px solid #eee;
 }
 .header-menu a {
-    margin: 0 30px;
+    margin: 0 15px;
     text-decoration: none;
 }
-ul {
-    display: inline-block;
-}
-li {
-    display: inline-block;
-}
 
-.about {
+.abouts {
     width: 100%;
     padding-bottom: 60px;
     background-color: #efefef;
 }
-.about-section{
-    width: 900px;
+.abouts-section{
+    width: 100%;
+    max-width: 900px;
     margin: auto;
 }
-.about-us p {
+.abouts-us p {
     padding: 10px 0;
 }
 .value {
+    width: 100%;
     margin-top: 80px;
     text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
+/*    justify-content: center;*/
 }
 .value-box {
+    width: calc(100% / 3);
     margin: 0 15px;
 }
 .trust {
-    height: 300px;
     width: 300px;
+    height: 300px;
     color: #f2755f;
     background-color: #ffffff;
     line-height: 300px;
 }
-.trust-inner {
-    height: 150px;
+.trust-box {
     width: 300px;
+    height: 150px;
     color: #ffffff;
     background-color: #f2755f;
+/*
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+*/
+}
+.trust-inner {
+    width: 300px;
+    height: 150px;
+    color: #ffffff;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
 }
 .fair {
-    height: 300px;
     width: 300px;
+    height: 300px;
     color: #66CDAA;
     background-color: #ffffff;
     line-height: 300px;
 }
-.fair-inner {
-    height: 150px;
+.fair-box {
     width: 300px;
+    height: 150px;
     color: #ffffff;
     background-color: #66CDAA;
+/*
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+*/
+}
+.fair-inner {
+    width: 300px;
+    height: 150px;
+    color: #ffffff;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
 }
 .moral {
-    height: 300px;
     width: 300px;
+    height: 300px;
     color: #6A88E0;
     background-color: #ffffff;
     line-height: 300px;
 }
-.moral-inner {
-    height: 150px;
+.moral-box {
     width: 300px;
+    height: 150px;
     color: #ffffff;
     background-color: #6A88E0;
+/*
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+*/
+}
+.moral-inner {
+    width: 300px;
+    height: 150px;
+    color: #ffffff;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -147,16 +173,26 @@ li {
     padding-bottom: 60px;
 }
 .activities-section {
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
     margin: auto;
 }
-.section-contents {
+.contacts-section {
+    width: 100%;
     margin-top: 40px;
 }
-.map iframe {
-    width: 600px;
+.map-frame {
+    min-width: 320px;
     height: 400px;
+    width: 80%;
+    max-width: 600px;
+/*
+     width: 100%;
+    max-width: 600px;
+    height: 400px;
+*/
 }
+
 .address {
     margin-top: 20px;
 }
@@ -186,7 +222,7 @@ li {
 }
 input[type="text"], textarea {
     width:400px;
-    padding: 15px;
+    padding: 8px 0;
     margin-bottom: 20px;
     vertical-align: middle;
     background: rgba(255,255,255,0.9);
@@ -208,5 +244,8 @@ textarea {
 }
 footer {
     padding: 10px 0;
-    margin-left: 150px;
 }
+.copyright {
+    margin-left: 10%;
+}
+

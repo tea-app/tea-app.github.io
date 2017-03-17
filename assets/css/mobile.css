@@ -14,12 +14,10 @@
     }
     .header {
         width: 100%;
-        height: 120px;
-
+        height: 48px;
     }
     .header-container {
         width: 100%;
-        height: 120px;
     }
     .header-logo {
         display: none;
@@ -37,9 +35,6 @@
         margin: 0;
         border-bottom: 1px solid #eee;
     }
-    li {
-        display: table-row;
-    }
     .about-section {
         width: 100%;
 }
@@ -48,6 +43,7 @@
         display: block;
     }
     .value-box {
+        margin: 0;
         margin-top: 10px;
         
     }
@@ -55,7 +51,7 @@
         width: 100%;
     }
     .map {
-        display: none;
+/*        display: none;*/
     }
     .view-map {
         display: inline;
@@ -66,10 +62,15 @@
     .contact-form {
         width: 100%;
     }
-    input[type="text"], textarea {
+    input[type="text"],textarea {
         width: 100%;
     }
     footer {
         margin: 0;
+    }
+    .copyright {
+        font-size: 10px;
+        margin: 0;
+        text-align: center;
     }
 }
