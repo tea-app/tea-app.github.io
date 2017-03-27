@@ -1,13 +1,12 @@
 (function ($) {
     'use strict';
-    //smooth scroll
     $('a[href^=#]').click(function () {
         var speed       = 1000,
             href        = $(this).attr("href"),
             $header     = $('#top-head'),
             position    = (href === "#" ? 0 : $(href).offset().top);
         
-        console.log($header.height());
+//        console.log($header.height());
         
         $("html, body").stop().animate({scrollTop: position - 56}, speed, "swing");
         return false;
