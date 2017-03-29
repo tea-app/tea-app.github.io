@@ -1,0 +1,43 @@
+#top-head,
+#top-head.fixed,
+footer
+{
+    background-color: #303030;
+}
+
+.abouts,
+.activities,
+.contacts
+{
+    background-color: #FEFEFE;
+}
+
+
+/*
+    文字色 白
+*/
+#top-head,
+#top-head.fixed,
+.logo,
+#global-nav ul li a,
+#top-head.fixed #global-nav ul li a,
+.copyright
+{    
+    color: #FEFEFE;
+}
+
+/* 
+    文字色 黒
+*/
+.abouts p,
+.section-title,
+.address,
+.address span
+{
+    color: #303030;
+}
+
+
+.trust {
+    color: #F2755F;
+}

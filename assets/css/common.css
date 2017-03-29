@@ -1,5 +1,5 @@
 h1 {
-    font-size: 64px;
+    font-size: 48px;
     font-weight: bold;
 }
 h2 {
@@ -7,7 +7,7 @@ h2 {
     color: #5a5a5a;
 }
 p {
-    font-size: 24px;
+    font-size: 18px;
 }
 a {
     font-size: 16px;
@@ -19,7 +19,7 @@ a {
 }
 .inner {
     width: 100%;
-    max-width: 900px;
+/*    max-width: 900px;*/
     margin: auto;
 }
 .inner:after {
@@ -29,19 +29,19 @@ a {
 }
 
 #top-head {
-    background: #fff;
-    color: #666;
+    width: 100%;
+    height: 56px;
+    background: #fcfcfc;
+    color: #303030;
     top: -100px;
     position: absolute;
-    width: 100%;
     margin: 100px auto 0;
-    padding: 30px 0 0;
-    line-height: 1;
+    line-height: 56px;
     z-index: 999;
 }
 #top-head a,
 #top-head {
-    color: #666;
+    color: #303030;
     text-decoration: none;
 }
 #top-head .inner {
@@ -50,26 +50,34 @@ a {
 #top-head .logo {
     float: left;
     font-size: 36px;
+    margin-left: 64px;
 }
 #global-nav ul {
+    width: auto;
+    height: 56px;
     list-style: none;
-    position: absolute;
     right: 0;
     bottom: 0;
     font-size: 14px;
+    float:right;
 }
 #global-nav ul li {
     float: left;
+    line-height: 56px;
 }
 #global-nav ul li a {
-    padding: 0 30px;
+    padding: 0 20px;
 }
-
+#global-nav .icon {
+    height: 32px;
+    width: 32px;
+    margin-top: 12px;
+/*    margin-left: 96px;*/
+}
 #top-head.fixed {
     margin-top: 0;
     top: 0;
     position: fixed;
-/*    padding-top: 10px;*/
     height: 56px;
     background: #fff;
     background: rgba(255,255,255,.7);
@@ -123,19 +131,24 @@ a {
 #nav-toggle span:nth-child(3) {
     top: 22px;
 }
-
-
+.main {
+    padding: 16px;
+}
 .top {
     margin-top: 56px;
     text-align: center;
 }
 .top-image {
     width: 100%;
+    max-width: 900px;
+    margin-top: 64px;
+    margin-bottom: 64px;
 }
 
 .abouts {
     width: 100%;
-    background-color: #f7f7f7;
+    color: #336FD0;
+    background-color: #fcfcfc;
     padding-bottom: 32px;
 }
 .abouts-section{
@@ -143,14 +156,17 @@ a {
     max-width: 900px;
     margin: auto;
 }
+.about-us p {
+    margin: 16px 0;
+}
 .value {
     width: 100%;
     text-align: center;
-    padding-top: 48px;
+    padding-top: 32px;
 }
 .value-box {
     width: 100%;
-    margin: auto;
+    padding: 24px 0;
 }
 .trust {
     color: #F2755F;
@@ -180,14 +196,17 @@ a {
     margin-top: 40px;
 }
 .map-frame {
-    min-width: 320px;
     height: 400px;
-    width: 80%;
+    width: 100%;
     max-width: 600px;
 }
-
 .address {
+    font-size: 16px;
     margin-top: 20px;
+}
+.address span {
+    font-size: 18px;
+    font-weight: bold;
 }
 .view-map {
     border-bottom: 1px solid #797979;
@@ -196,19 +215,22 @@ a {
 .contacts {
     width: 100%;
     padding-bottom: 60px;
-    background-color: #ebebeb;
+    background-color: #f7f7f7;
     display: inline-block;
 }
 .social-icon {
     text-decoration: none;
     cursor: pointer;
 }
+/*
 .icon {
     width: 40px;
     height: 40px;
 }
+*/
 .contacts-section {
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
     margin: auto;
 }
 .contact-form {
@@ -222,8 +244,9 @@ input[type="text"], textarea {
     margin-bottom: 20px;
     vertical-align: middle;
     background: rgba(255,255,255,0.9);
-    border: none;
+    border: 1px solid #303030;
     border-radius: 3px;
+    resize: none;
     font-size: 16px;
 }
 textarea {
@@ -235,13 +258,13 @@ textarea {
     padding: 10px 35px;
     color: #797979;
     border-radius: 3px;
-    border-style: none;
+    border: 1px solid #303030;
     cursor: pointer;
 }
 footer {
-    padding: 10px 0;
+    height: 56px;
+    text-align: center;
 }
 .copyright {
-    margin-left: 10%;
+    line-height: 56px;
 }
-
