@@ -1,4 +1,4 @@
-@media(max-width: 700px){
+@media(max-width: 680px){
     /*for mobile*/
     h1 {
         font-size: 40px;
@@ -36,15 +36,12 @@
     #top-head.fixed .logo,
     #top-head .logo {
         position: absolute;
-/*        left: 13px;*/
-/*        top: 13px;*/
         color: #FEFEFE;
         font-size: 36px;
     }
     #global-nav {
         position: absolute;
         top: -500px;
-        background: #333;
         width: 100%;
         text-align: center;
         padding: 0;
@@ -130,11 +127,5 @@
     }
     input[type="text"],textarea {
         width: 90%;
-    }
-    footer {
-        margin: 0;
-    }
-    .copyright {
-        font-size: 16px;
     }
 }
