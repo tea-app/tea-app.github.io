@@ -40,13 +40,15 @@ a {
     color: #303030;
     text-decoration: none;
 }
-#top-head .inner {
-    position: relative;
-}
 #top-head .logo {
     float: left;
-    font-size: 36px;
+    margin-top: 8px;
     margin-left: 48px;
+}
+.logo img {
+    height: 24px;
+    position: absolute;
+    margin-top: 8px;
 }
 #global-nav ul {
     width: auto;
@@ -84,7 +86,6 @@ a {
 #top-head.fixed #global-nav ul li a {
     padding: 0 20px;
 }
- 
 #nav-toggle {
     display: none;
     position: absolute;
