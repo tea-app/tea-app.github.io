@@ -1,11 +1,3 @@
-(function () {
-
-
-
-
-
-})();
-
 var postContact = () => {
   'use strict'
 
@@ -15,10 +7,9 @@ var postContact = () => {
   var subject     = name.value + ':email=' + email.value;
   var apigClient  = apigClientFactory.newClient();
 
-  console.log(name);
-  if (name.value === '') { name.validity(); return false; }
-  if (email.value === '') { email.validity(); return false; }
-  if (message.value === '') { message.validity(); return false; }
+  if (name.value === '') { return true; }
+  if (email.value === '') { return true; }
+  if (message.value === '') { return true; }
 
   var body = {
     subject: subject,
@@ -27,7 +18,6 @@ var postContact = () => {
 
   var promise = apigClient.contactsPost('', body)
   promise.then(response => {
-    console.log(response);
     window.alert("お問い合わせを受け付けました。");
     window.location.reload();
   });
