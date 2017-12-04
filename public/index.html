@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="assets/css/mobile.css">
         <link rel="stylesheet" href="assets/css/colors.css">
     </head>
-    
+
     <body>
         <header id="top-head">
             <div class="inner">
@@ -96,18 +96,30 @@
                 <div class="contacts-section">
                     <h1 class="section-title">Contacts</h1>
                     <form class="contact-form">
-                        <input type="text" name="name" placeholder="Name">
-                        <input type="text" name="email" placeholder="Email">
-                        <textarea name="message" placeholder="Message"></textarea>
-                        <button type="submit" class="btn">Submit</button>
+                        <input id="contact-name" type="text" name="name" placeholder="Name" required>
+                        <input id="contact-email" type="text" name="email" placeholder="Email" required>
+                        <textarea id="contact-message" name="message" placeholder="Message" required></textarea>
+                        <button onClick="return postContact();" class="btn">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
-        
+
         <footer>
             <div class="copyright">Copyright©︎ 2017 Te+A</div>
         </footer>
+        <script type="text/javascript" src="/assets/js/lib/axios/dist/axios.standalone.js"></script>
+        <script type="text/javascript" src="/assets/js/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+        <script type="text/javascript" src="/assets/js/lib/CryptoJS/rollups/sha256.js"></script>
+        <script type="text/javascript" src="/assets/js/lib/CryptoJS/components/hmac.js"></script>
+        <script type="text/javascript" src="/assets/js/lib/CryptoJS/components/enc-base64.js"></script>
+        <script type="text/javascript" src="/assets/js/lib/url-template/url-template.js"></script>
+        <script type="text/javascript" src="/assets/js/lib/apiGatewayCore/sigV4Client.js"></script>
+        <script type="text/javascript" src="/assets/js/lib/apiGatewayCore/apiGatewayClient.js"></script>
+        <script type="text/javascript" src="/assets/js/lib/apiGatewayCore/simpleHttpClient.js"></script>
+        <script type="text/javascript" src="/assets/js/lib/apiGatewayCore/utils.js"></script>
+        <script type="text/javascript" src="/assets/js/apigClient.js"></script>
+        <script type="text/javascript" src="/assets/js/contact.js"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script type="text/javascript" src="/assets/js/header.fixed.js"></script>
     </body>
