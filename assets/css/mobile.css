@@ -1,4 +1,4 @@
-@media(max-width: 640px){
+@media(max-width: 900px){
     /*for mobile*/
     h1 {
         font-size: 40px;
@@ -9,8 +9,18 @@
     p {
         font-size: 16px;
     }
+    .section-top h1{
+        padding: 0;
+        position: relative;
+        top: 32px;
+    }
     .section-title {
-        padding: 16px 0;
+        padding: 0;
+    }
+    .card {
+        width: calc(100vw - 80px);
+        top: -94px;
+        padding-bottom: 56px;
     }
     #top-head,
     .inner {
@@ -21,15 +31,21 @@
         top: 0;
         position: fixed;
         margin-top: 0;
+        border: none;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
     }
     #top-head.fixed {
         padding-top: 0;
         background: transparent;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     }
     #mobile-head {
-        background: #303030;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
+        background-color: #FFFFFF;
         width: 100%;
-        height: 56px;
+        height: 64px;
         z-index: 999;
         position: relative;
     }
@@ -48,6 +64,9 @@
         -moz-transition: .5s ease-in-out;
         transition: .5s ease-in-out;
     }
+    #global-nav .icon {
+        padding: 0px;
+    }
     #global-nav ul {
         width: 100%;
         list-style: none;
@@ -59,17 +78,20 @@
     #global-nav ul li {
         float: none;
         position: static;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid #303030;
+        padding: 0px;
     }
     #top-head #global-nav ul li a,
     #top-head.fixed #global-nav ul li a {
         width: 100%;
-        background-color: #303030;
+        background-color: #FFFFFF;
         display: block;
-        color: #fff;
+        color: #303030;
         padding: 0;
     }
     .icon-item {
-        background-color: #303030;
+        background-color: #FFFFFF;
         width: 100%;
         display: inline-flex;
         justify-content: center;
@@ -82,7 +104,7 @@
         display: block;
     }
     #nav-toggle span {
-        background-color: #FEFEFE;
+        background-color: #303030;
     }
     .open #nav-toggle span:nth-child(1) {
         top: 11px;
@@ -105,26 +127,39 @@
         -webkit-transform: translateY(556px);
         transform: translateY(556px);
     }
-    .about-section {
-        width: 100%;
-}
-    .activities-section {
-        width: 100%;
+    .top-image {
+        width: 100vw;
+        margin-top: 104px;
+        margin-bottom: 56px;
     }
-    .map-frame {
-        width: 90%;
+    .about {
+        padding-bottom: 56px;
     }
-    .view-map {
-        display: inline;
+    .skills {
+        /* max-width: 300px; */
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
     }
-    .contacts-section {
-        width: 100%;
-        
+    .skill-item {
+        max-width: 300px;
+        padding: 32px 0 8px 0; 
+        margin: 0 auto;
     }
-    .contact-form {
-        width: 100%;
+    .skill-content {
+        max-width: 300px;
+        /* float: left; */
     }
-    input[type="text"],textarea {
-        width: 90%;
+    .activity {
+        padding-bottom: 56px;
+    }
+    .contact {
+        padding-bottom: 56px;
+    }
+    .card-contact {
+        display: flex;
+        flex-direction: column;
+        width: calc(100vw - 80px);
+        top: -94px;
     }
 }
