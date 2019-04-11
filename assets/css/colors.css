@@ -1,44 +1,41 @@
-#top-head,
-#top-head.fixed,
+/*
+    背景色：白
+*/
+body,
+.card,
+.card-contact
+{
+    background-color: #FFFFFF;
+}
+/* 
+    背景色：黒 
+*/
+.section-top,
 footer
 {
     background-color: #303030;
 }
-
-.abouts,
-.activities,
-.contacts,
-.btn
-{
-    background-color: #FEFEFE;
-}
-
-
-/*
-    文字色 白
+/* 
+    背景色：群青 
 */
-#top-head,
-#top-head.fixed,
-.logo,
-#global-nav ul li a,
-#top-head.fixed #global-nav ul li a,
-.copyright
-{    
-    color: #FEFEFE;
+.chips {
+    background-color: #537495;
 }
 
 /* 
-    文字色 黒
+    文字色：白 
 */
-.abouts p,
 .section-title,
-.address,
-.address span
+.chips,
+.copyright
 {
-    color: #303030;
+    color: #FFFFFF;
 }
 
-
-.trust {
-    color: #F2755F;
+/* 
+    文字色：TEA Color 
+*/
+.primary-color 
+{
+    color: #0D71D7;
 }

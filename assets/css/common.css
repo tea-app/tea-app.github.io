@@ -1,90 +1,155 @@
+/* ---------------------
+    - common setting
+    - header
+    - main
+      - top
+      - about
+      - activity
+      - contact  
+    - footer
+--------------------- */
+
+/* =====================
+  common setting
+===================== */
 h1 {
     font-size: 48px;
-    font-weight: bold;
+    font-weight: 700;
 }
 h2 {
     font-size: 32px;
+    font-weight: 700;
+}
+h3 {
+    font-size: 22px;
+    font-weight: 500;
 }
 p {
-    font-size: 18px;
+    font-size: 14px;
 }
 a {
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
 }
-.section-title {
-    padding-top: 56px;
-    padding-bottom: 24px;
+.section-top {
+    height: 196px;
 }
+.section-top h1 {
+    text-align: center;
+    position: relative;
+    top: 48px;
+}
+.section-title {
+    font-family: 'Play';
+    font-weight: 500;
+    text-align: center;
+}
+.card {
+    max-width: 612px;
+    position: relative;
+    top: -54px;
+    padding: 32px 24px 56px 24px; 
+    filter: drop-shadow(0px 10px 40px rgba(0,0,0,0.16));
+    z-index: 10;
+    margin: 0 auto;
+}
+.chips {
+    height: 26px;
+    border-radius: 16px;
+    text-align: center;
+    padding-top: 6px;
+    font-size: 14px;
+}
+.primary-color {
+    font-weight: 500;
+}
+
+/* =====================
+  header
+===================== */
 .inner {
     width: 100%;
     margin: auto;
 }
+/* ?? */
 .inner:after {
     content: "";
     clear: both;
     display: block;
 }
-
 #top-head {
     width: 100%;
-    height: 56px;
+    height: 64px;
     top: -100px;
     position: absolute;
     margin: 100px auto 0;
-    line-height: 56px;
+    border-bottom: 2px solid;
+    border-bottom-color: rgba(0, 0, 0, 0.20);
+    line-height: 64px;
     z-index: 999;
 }
 #top-head a,
 #top-head {
+    font-family: 'Play';
+    font-size: 20px;
     color: #303030;
     text-decoration: none;
 }
 #top-head .logo {
+    height: 100%;
     float: left;
-    margin-top: 8px;
-    margin-left: 48px;
+    margin-top: 20px;
+    margin-left: 24px;
 }
 .logo img {
     height: 24px;
     position: absolute;
-    margin-top: 8px;
 }
 #global-nav ul {
     width: auto;
-    height: 56px;
+    height: 64px;
     list-style: none;
     right: 0;
     bottom: 0;
-    font-size: 14px;
-    float:right;
+    float: right;
 }
 #global-nav ul li {
     float: left;
-    line-height: 56px;
+    line-height: 64px;
+    padding-left: 16px;
 }
-#global-nav ul li a {
-    padding: 0 20px;
+#global-nav .nav-item {
+    width: 104px;
+    display: block;
+    text-align: center;
+}
+#global-nav .icon-item {
+    padding: 0 24px 0 0; 
 }
 #global-nav .icon {
     height: 32px;
     width: 32px;
-    margin-top: 12px;
+    margin-top: 16px;
+    padding-left: 16px;
 }
 #top-head.fixed {
     margin-top: 0;
     top: 0;
     position: fixed;
-    height: 56px;
-    transition: top 0.65s ease-in;
-    -webkit-transition: top 0.65s ease-in;
-    -moz-transition: top 0.65s ease-in;
+    height: 64px;
+    transition: top 0.4s ease-in;
+    -webkit-transition: top 0.4s ease-in;
+    -moz-transition: top 0.4s ease-in;
+    background-color: #FFFFFF;
+    filter: drop-shadow(4px 10px 20px rgba(0,0,0,0.16));
+    border: none;
 }
 #top-head.fixed {
     font-size: 24px;
 }
 #top-head.fixed #global-nav ul li a {
-    padding: 0 20px;
+    width: 104px;
+    padding-left: 0px;
 }
 #nav-toggle {
     display: none;
@@ -118,128 +183,151 @@ a {
 #nav-toggle span:nth-child(3) {
     top: 22px;
 }
+
+/* =====================
+  main
+===================== */
 .main {
-    padding: 16px;
+    width: 100%;
 }
+/* top
+--------------------  */
 .top {
-    margin-top: 56px;
     text-align: center;
 }
 .top-image {
-    width: 100%;
     max-width: 900px;
-    margin-top: 64px;
-    margin-bottom: 64px;
+    margin-top: 144px;
+    margin-bottom: 144px;
 }
-
-.abouts {
+/* about
+--------------------  */
+.about {
     width: 100%;
-    color: #336FD0;
-    padding-bottom: 32px;
+    height: auto;
+    padding-bottom: 120px;
 }
-.abouts-section{
+.about p:nth-child(2) {
+    max-width: 450px;
+}
+.about .chips {
+    width: 160px;
+}
+.main-lead {
+    font-family: 'Noto Sans CJK JP';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #303030;
+    padding-top: 16px;
+}
+.main-lead :nth-child(0){
+    max-width: 540px;
+}
+.tea-initial {
+    padding-top: 8px;
+    padding-bottom: 40px;
+    color: #303030;
+}
+.skills {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    max-width: 900px;
-    margin: auto;
-}
-.about-us p {
-    margin: 16px 0;
-}
-.value {
-    width: 100%;
-    text-align: center;
     padding-top: 32px;
 }
-.value-box {
+.skill-item {
+    max-width: 240px;
+    text-align: center;
+    padding-left: 48px;
+}
+.skill-icon {
+    height: 32px;
+    width: 32px;
+}
+.skill-name {
+    padding-bottom: 16px;
+    font-family: 'Play';
+    font-size: 22px;
+    color: #303030;
+}
+.skill-content {
+    max-width: 240px;
+    padding: 0px;
+    color: #303030;
+}
+/* activity
+--------------------  */
+.activity {
     width: 100%;
-    padding: 24px 0;
+    height: auto;
+    padding-bottom: 120px;
 }
-.trust {
-    color: #F2755F;
-    margin-bottom: 24px;
+.activity p:nth-child(3){
+    padding: 16px 0 8px 0;
+    color: #303030;
 }
-.fair {
-    color: #66CDAA;
-    margin-bottom: 24px;
+.activity p:nth-child(4){
+    padding-bottom: 8px;
+    color: #303030;
 }
-.moral {
-    color: #6A88E0;
-    margin-bottom: 24px;
+.activity p:nth-child(5){
+    padding-bottom: 40px;
+    color: #303030;
 }
-
-.activities {
-    width: 100%;
-    padding-bottom: 60px;
+.activity p:nth-child(7){
+    padding-bottom: 8px;
 }
-.activities-section {
-    width: 100%;
-    max-width: 900px;
-    margin: auto;
+.activity p:nth-child(8){
+    padding-bottom: 8px;
+    color: #303030;
 }
-.contacts-section {
-    width: 100%;
-    margin-top: 40px;
+.activity .chips {
+    width: 192px;
 }
 .map-frame {
     height: 400px;
     width: 100%;
-    max-width: 600px;
+    max-width: 612px;
 }
-.address {
+/* contact
+--------------------  */
+.contact {
+    width: 100%;
+    height: auto;
+    padding-bottom: 120px;
+}
+.contact a{
     font-size: 16px;
-    margin-top: 20px;
+    color: #303030;
 }
-.address span {
-    font-size: 18px;
-    font-weight: bold;
+.card-contact {
+    max-width: 628px;
+    padding: 24px 24px 40px 24px; 
+    filter: drop-shadow(0px 10px 40px rgba(0,0,0,0.16));
+    z-index: 10;
+    position: relative;
+    top: -54px;
+    margin: 0 auto;
 }
-.view-map {
-    border-bottom: 1px solid #797979;
+.contact .chips {
+    width: 160px;
+}
+.card-contact p:nth-child(2) {
+    padding-bottom: 16px;
+}
+.card-contact a:nth-child(even) {
+    padding-right: 24px;
+    color: #0D71D7;
 }
 
-.contacts {
-    width: 100%;
-    padding-bottom: 60px;
-    display: inline-block;
-}
-.social-icon {
-    text-decoration: none;
-    cursor: pointer;
-}
-.contacts-section {
-    width: 100%;
-    max-width: 900px;
-    margin: auto;
-}
-.contact-form {
-    width: 100%;
-    max-width: 450px;
-}
-input[type="text"], textarea {
-    width: 100%;
-    max-width:450px;
-    padding: 5px 0 5px 5px;
-    margin-bottom: 20px;
-    vertical-align: middle;
-    border: 1px solid #303030;
-    border-radius: 3px;
-    resize: none;
-    font-size: 16px;
-}
-textarea {
-    height: 300px;
-}
-.btn {
-    font-size: 18px;
-    padding: 10px 35px;
-    border-radius: 3px;
-    border: 1px solid #303030;
-    cursor: pointer;
-}
+/* =====================
+  footer
+===================== */
 footer {
     height: 56px;
     text-align: center;
 }
 .copyright {
     line-height: 56px;
+    color: #FFFFFF;
 }
