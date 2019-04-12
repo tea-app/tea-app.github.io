@@ -214,9 +214,9 @@ a {
     width: 160px;
 }
 .main-lead {
-    font-family: 'Noto Sans CJK JP';
+    font-family: 'Noto Sans JP';
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 32px;
     color: #303030;
     padding-top: 16px;
